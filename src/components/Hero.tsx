@@ -73,7 +73,7 @@ export default function Hero() {
                             </Button>
                         </StarBorder>
                         <Button size="lg" variant="outline" className="text-lg h-14 px-8" asChild>
-                            <a href="/resume.pdf">Resume</a>
+                            <a href="/Nithin_Varughese_resume.pdf">Resume</a>
                         </Button>
                     </motion.div>
                 </motion.div>

@@ -53,7 +53,7 @@ export default function Navbar() {
                     ))}
                     <StarBorder color="var(--accent)" speed="5s" className="ml-4 p-0 border-none bg-transparent">
                         <Button variant="outline" size="sm" className="text-accent border-none bg-transparent hover:bg-transparent shadow-none" asChild>
-                            <a href="/resume.pdf">Resume</a>
+                            <a href="/Nithin_Varughese_resume.pdf">Resume</a>
                         </Button>
                     </StarBorder>
                 </nav>
@@ -91,7 +91,7 @@ export default function Navbar() {
                         ))}
                         <StarBorder color="var(--accent)" speed="5s" className="p-0 border-none bg-transparent">
                             <Button variant="outline" size="lg" className="text-accent border-none bg-transparent hover:bg-transparent shadow-none" asChild>
-                                <a href="/resume.pdf">Resume</a>
+                                <a href="/Nithin_Varughese_resume.pdf">Resume</a>
                             </Button>
                         </StarBorder>
                     </motion.div>
