@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Input, Textarea } from "./ui/input";
 import { Button } from "./ui/button";
 import { CheckCircle2, X } from "lucide-react";
+import StarBorder from "./StarBorder";
 
 export default function Contact() {
     const [showModal, setShowModal] = useState(false);
@@ -58,7 +59,9 @@ export default function Contact() {
                             <div>
                                 <Textarea name="entry.558672215" placeholder="Message" rows={4} required className="bg-muted/80 border-border focus:border-accent" />
                             </div>
-                            <Button type="submit" className="w-full text-accent border-accent hover:bg-accent/10">Send Message</Button>
+                            <StarBorder color="var(--accent)" speed="5s" className="w-full p-0 border-none bg-transparent">
+                                <Button type="submit" className="w-full text-accent border-none bg-transparent hover:bg-transparent shadow-none">Send Message</Button>
+                            </StarBorder>
                         </form>
                     </CardContent>
                 </Card>

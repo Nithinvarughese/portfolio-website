@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Card, CardContent } from "./ui/card";
-import { GraduationCap, Brain, Code } from "lucide-react";
+import { GraduationCap, Brain } from "lucide-react";
 
 export default function About() {
     return (
@@ -22,13 +22,7 @@ export default function About() {
                 <div className="grid md:grid-cols-3 gap-8">
                     <div className="md:col-span-2 space-y-6 text-muted-foreground text-lg leading-relaxed">
                         <p>
-                            Hello! I'm Nithin, an Aspiring Data Analyst at the University of Windsor. My interest in data started when I realized how powerful insights can be derived from raw numbers.
-                        </p>
-                        <p>
-                            Fast-forward to today, I've had the privilege of gaining hands-on experience as a Data Scientist Intern at <span className="text-accent">Exeevo</span>. My main focus these days is building accessible, inclusive data products and digital experiences for a variety of clients.
-                        </p>
-                        <p>
-                            I recently completed the <span className="text-accent">Google Data Analytics Professional Certificate</span>, reinforcing my foundation in data processing, analysis, and visualization.
+                            Hello! I&apos;m Nithin, a third-year Computer Science student at the University of Windsor with a Minor in Mathematics. I specialize in building end-to-end Python and SQL data pipelines, designing predictive models, and delivering actionable insights through interactive dashboards. I&apos;ve had the privilege of gaining hands-on experience as a Data Scientist Intern at <span className="text-accent">Exeevo</span>, where I worked with Azure Cosmos DB, AI/ML models, and cloud-native automation at scale. I recently completed the <span className="text-accent">Google Data Analytics Professional Certificate</span>, reinforcing my foundation in data analysis, SQL, R, and Tableau.
                         </p>
                     </div>
 

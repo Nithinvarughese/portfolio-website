@@ -7,20 +7,20 @@ import { Button } from "./ui/button";
 
 const projects = [
     {
+        title: "Pitch Metrics — Football Analytics App",
+        description: "End-to-end sports analytics platform built with Python, PostgreSQL, and Streamlit. Automated ETL pipelines process 10,000+ match records via REST APIs, with a predictive model outperforming baseline seasonal accuracy by 15% across major European leagues.",
+        tech: ["Python", "PostgreSQL", "Streamlit", "REST APIs", "SQLAlchemy", "dbt"],
+        image: "/projects/youtube-preview-new.png",
+        github: "https://github.com/Nithinvarughese/bet-intel-engine",
+        external: "https://github.com/Nithinvarughese/bet-intel-engine"
+    },
+    {
         title: "YouTube Canada Trending Data Analysis",
         description: "An in-depth EDA of trending YouTube videos using Python, SQL, and Power BI. Uncovered key metrics driving engagement vs. raw views.",
         tech: ["Python", "SQL", "Power BI"],
         image: "/projects/youtube-preview-new.png",
         github: "https://github.com/Nithinvarughese/youtube_data_analytics",
         external: "https://github.com/Nithinvarughese/youtube_data_analytics"
-    },
-    {
-        title: "Global COVID-19 Data Dashboard",
-        description: "Interactive dashboard tracking global vaccination and case trends. Utilized SQL for data cleaning and Power BI for visualization.",
-        tech: ["Power BI", "SQL", "Excel"],
-        image: "/projects/covid-preview.jpg",
-        github: "https://github.com/Nithinvarughese/Covid-19-Project",
-        external: "https://github.com/Nithinvarughese/Covid-19-Project"
     }
 ];
 

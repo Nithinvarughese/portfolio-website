@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
+import StarBorder from "./StarBorder";
 
 const navLinks = [
     { name: "About", href: "#about" },
@@ -50,9 +51,11 @@ export default function Navbar() {
                             {link.name}
                         </a>
                     ))}
-                    <Button variant="outline" size="sm" className="ml-4 text-accent border-accent hover:bg-accent/10" asChild>
-                        <a href="https://drive.google.com/file/d/1AuoYWbCzGgsKpqcyAbFio5gbIZIoMKgh/view?usp=share_link" target="_blank" rel="noopener noreferrer">Resume</a>
-                    </Button>
+                    <StarBorder color="var(--accent)" speed="5s" className="ml-4 p-0 border-none bg-transparent">
+                        <Button variant="outline" size="sm" className="text-accent border-none bg-transparent hover:bg-transparent shadow-none" asChild>
+                            <a href="/resume.pdf">Resume</a>
+                        </Button>
+                    </StarBorder>
                 </nav>
 
                 {/* Mobile Toggle */}
@@ -86,9 +89,11 @@ export default function Navbar() {
                                 {link.name}
                             </a>
                         ))}
-                        <Button variant="outline" size="lg" className="text-accent border-accent hover:bg-accent/10" asChild>
-                            <a href="https://drive.google.com/file/d/1AuoYWbCzGgsKpqcyAbFio5gbIZIoMKgh/view?usp=share_link" target="_blank" rel="noopener noreferrer">Resume</a>
-                        </Button>
+                        <StarBorder color="var(--accent)" speed="5s" className="p-0 border-none bg-transparent">
+                            <Button variant="outline" size="lg" className="text-accent border-none bg-transparent hover:bg-transparent shadow-none" asChild>
+                                <a href="/resume.pdf">Resume</a>
+                            </Button>
+                        </StarBorder>
                     </motion.div>
                 )}
             </AnimatePresence>

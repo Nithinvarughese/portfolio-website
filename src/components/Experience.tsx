@@ -7,20 +7,11 @@ const jobs = [
     {
         title: "Data Scientist Intern",
         company: "Exeevo",
-        range: "Jan 2026 – Present",
+        range: "Jan 2026 – Apr 2026",
         details: [
-            "Remote internship based in Mississauga, Ontario, Canada.",
-            "Contributing to data science initiatives by cleaning and processing large datasets for analysis.",
-            "Building predictive models and creating interactive visualizations to drive business insights."
-        ]
-    },
-    {
-        title: "Volunteer Tech Support",
-        company: "Kuwait Red Crescent Society",
-        range: "Jan 2023 – Jun 2023",
-        details: [
-            "Assisted in troubleshooting hardware/software issues.",
-            "Maintained IT inventory and provided support to staff."
+            "Deployed AI/ML models to generate predictive insights, integrating real-time interfaces for production decision-making across active data pipelines.",
+            "Engineered high-throughput Azure Cosmos DB data pipelines processing 50k+ daily records, reducing query latency by 35% through systematic optimization.",
+            "Automated Azure infrastructure monitoring using Python scripting, eliminating 20 hours of manual SRE overhead per month through proactive lifecycle management."
         ]
     },
     {

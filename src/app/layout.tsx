@@ -7,14 +7,15 @@ import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import Spotlight from "@/components/ui/spotlight";
 import ScrollProgress from "@/components/ui/scroll-progress";
+import SplashCursor from "@/components/SplashCursor";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const firaCode = Fira_Code({ subsets: ["latin"], variable: "--font-mono" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif" });
 
 export const metadata: Metadata = {
-  title: "Nithin Varughese | Data Scientist Intern",
-  description: "Portfolio of Nithin Varughese, a Data Scientist Intern specializing in ML, AI, and Data Analytics.",
+  title: "Nithin Varughese | Data Scientist & Analyst",
+  description: "Portfolio of Nithin Varughese, a Data Scientist & Analyst specializing in ML, AI, and Data Analytics.",
 };
 
 export default function RootLayout({
@@ -33,6 +34,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <SmoothScroll>
+            <SplashCursor />
             <ScrollProgress />
             <Spotlight />
             <Navbar />

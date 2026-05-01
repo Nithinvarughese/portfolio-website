@@ -2,23 +2,36 @@
 
 import { motion } from "framer-motion";
 import {
-    SiPython, SiPandas, SiNumpy, SiR, SiC, SiHtml5, SiCss3,
-    SiPlotly,
-    SiGit, SiGithub, SiJupyter, SiLinux, SiPostman, SiTableau, SiReact, SiVite
+    SiPython,
+    SiR,
+    SiHtml5,
+    SiTableau,
+    SiGit,
+    SiLinux,
+    SiPostgresql,
+    SiDocker,
+    SiJavascript,
+    SiStreamlit,
+    SiDbt,
+    SiSqlalchemy,
+    SiApacheairflow,
+    SiPostman,
 } from "react-icons/si";
-import { FaFileExcel, FaDatabase, FaWindows, FaCloud } from "react-icons/fa";
+import { FaFileExcel, FaDatabase, FaCloud } from "react-icons/fa";
+import { FaMicrosoft } from "react-icons/fa6";
 import { VscVscode } from "react-icons/vsc";
 
 const skillCategories = [
     {
-        title: "Analysis & Viz",
+        title: "Analysis & Visualization",
         skills: [
             { name: "Excel", icon: FaFileExcel, color: "#217346" },
-            { name: "Power BI", icon: SiPlotly, color: "#F2C811" }, // SiPowerbi seems missing, using SiPlotly as placeholder or another icon
+            { name: "Power BI", icon: FaMicrosoft, color: "#F2C811" },
             { name: "Tableau", icon: SiTableau, color: "#E97627" },
+            { name: "Streamlit", icon: SiStreamlit, color: "#FF4B4B" },
             { name: "Matplotlib", icon: SiPython, color: "#3776AB" },
-            { name: "Seaborn", icon: SiPlotly, color: "#3F4F75" }
-        ]
+            { name: "Seaborn", icon: SiPython, color: "#3F4F75" },
+        ],
     },
     {
         title: "Programming",
@@ -26,25 +39,30 @@ const skillCategories = [
             { name: "Python", icon: SiPython, color: "#3776AB" },
             { name: "SQL", icon: FaDatabase, color: "#CC2927" },
             { name: "R", icon: SiR, color: "#276DC3" },
-            { name: "C", icon: SiC, color: "#A8B9CC" },
-            { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
-            { name: "CSS3", icon: SiCss3, color: "#1572B6" },
-            { name: "React", icon: SiReact, color: "#61DAFB" },
-            { name: "Vite", icon: SiVite, color: "#646CFF" }
-        ]
+            { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+            { name: "HTML/CSS", icon: SiHtml5, color: "#E34F26" },
+        ],
     },
     {
-        title: "Tools & OS",
+        title: "Data Engineering",
         skills: [
+            { name: "ETL Pipelines", icon: SiApacheairflow, color: "#017CEE" },
+            { name: "dbt", icon: SiDbt, color: "#FF694B" },
+            { name: "SQLAlchemy", icon: SiSqlalchemy, color: "#D71F00" },
+            { name: "REST APIs", icon: SiPostman, color: "#FF6C37" },
+            { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
+        ],
+    },
+    {
+        title: "Cloud & Tools",
+        skills: [
+            { name: "Microsoft Azure", icon: FaCloud, color: "#0078D4" },
+            { name: "Docker", icon: SiDocker, color: "#2496ED" },
             { name: "Git", icon: SiGit, color: "#F05032" },
-            { name: "GitHub", icon: SiGithub, color: "#71717a" },
-            { name: "Azure", icon: FaCloud, color: "#0078D4" },
-            { name: "Jupyter", icon: SiJupyter, color: "#F37626" },
+            { name: "Linux/Unix", icon: SiLinux, color: "#FCC624" },
             { name: "VS Code", icon: VscVscode, color: "#007ACC" },
-            { name: "Windows", icon: FaWindows, color: "#0078D6" },
-            { name: "Linux", icon: SiLinux, color: "#FCC624" }
-        ]
-    }
+        ],
+    },
 ];
 
 export default function Skills() {
@@ -76,7 +94,7 @@ export default function Skills() {
                                         initial={{ opacity: 0, scale: 0.8 }}
                                         whileInView={{ opacity: 1, scale: 1 }}
                                         viewport={{ once: true }}
-                                        transition={{ delay: (catIndex * 0.1) + (index * 0.05) }}
+                                        transition={{ delay: catIndex * 0.1 + index * 0.05 }}
                                         whileHover={{ y: -5 }}
                                         className="group relative flex flex-col items-center p-6 rounded-xl bg-card border border-border hover:border-accent/50 hover:bg-accent/5 transition-all duration-300"
                                     >
