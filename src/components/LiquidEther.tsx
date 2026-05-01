@@ -641,7 +641,10 @@ export default function LiquidEther({
                     Math.max(Mouse.coords.y, -1 + cursorSizeY + props.cellScale.y * 2),
                     1 - cursorSizeY - props.cellScale.y * 2
                 );
-                const uniforms = this.mouse.material.uniforms;
+                const rawMaterial = Array.isArray(this.mouse.material)
+                    ? this.mouse.material[0]
+                    : this.mouse.material;
+                const uniforms = (rawMaterial as THREE.RawShaderMaterial).uniforms;
                 uniforms.force.value.set(forceX, forceY);
                 uniforms.center.value.set(centerX, centerY);
                 uniforms.scale.value.set(props.cursor_size, props.cursor_size);
